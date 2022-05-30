@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    min-height: 100vh;
+    display: block;
+    border: solid #000000;
+    overflow: hidden;
+}
+.intro{
+    max-height: 100vh;
+
+}
+.video_div{
+    position: relative;
+
+}
+.video_media{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+}
+iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+}
+.main{
+    border: solid #ff0000;
+    display: block;
+}

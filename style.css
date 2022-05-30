@@ -1,0 +1,312 @@
+
+body {
+ border:solid #000000;
+ margin: 0;
+ padding: 0;
+ flex-direction: column;  
+} /*Последние две строки означают что элементы 
+      в body друг под другом располагаются
+      И то что ищвн занимает всю часть что мы видим
+      (Это нужно чтоб прижать footer к низу)*/
+      header{
+        min-height: 100vh;
+        display: block;
+        border: solid #000000;
+        overflow: hidden;
+        justify-content: center;
+      }
+      .intro{
+        max-height: 100vh;
+      
+      }
+      .intro::after{
+        content: "";
+        display: block;
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.6);
+        
+      
+        z-index: 1;
+      }
+      .video_div{
+        position: relative;
+        z-index: 0;
+      
+      }
+      .video_media{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+      
+      }
+      
+      .logotip{
+        z-index: 2; 
+      
+      }
+      
+
+nav{
+  height: 30px;
+  width: 100%;
+  background-color: #fff000;
+  display: flex;
+}
+
+.menu1 *{
+  margin: 0;
+  padding: 0;
+  flex: 100%;
+  justify-content: center;
+  
+}
+.menu1 ul{  /*Настраиваем самую внешнию таблицу*/
+  list-style-type: none; 
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  
+  
+  
+}
+
+.menu1 ul li{ /*настраиваем строки изначальной таблицы*/
+  position: relative;
+  display:block;
+  width: auto;
+  height: auto;
+
+
+}
+
+.menu1 ul li a{
+  
+  width: 200px;
+  line-height: 1.5em;
+  padding: 3px;
+  border: solid #ffffff;
+  background-color: black;
+  color: #ffffff;
+  padding:4px ;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin: 2px;
+  height: 36px; 
+}
+
+.menu1 ul li a:hover {
+ 
+  
+  width: 200px;
+  line-height: 1.5em;
+  padding: 3px;
+  border: solid #000000;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  padding:4px ;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin: 2px;
+  height: 36px;
+}
+
+.menu1 ul li ul{
+  padding: absolute;
+  top: 36px; /* Сдвиг вниз на...*/
+  left: 0;   /*Сдвиг вправо на ...*/
+  display: none;
+  width: 100px;
+  
+  
+  
+}
+
+.menu1 ul li:hover ul{
+  display: block;
+}
+
+.menu1 ul li ul li{
+  
+  float:none;
+  width: 100%;
+}
+
+
+h1{
+  
+  margin: 0px;
+  display:block;
+  font-size: 70px;
+  margin: top 0; 
+  text-align: center;
+  text-shadow: left 3px #cecece;
+  font-family: 'Dancing Script', cursive;
+  
+  width: auto;
+  display: inline-block;
+}
+.Logo {
+  margin: 10x;
+  float: left;
+
+  
+}
+
+div {
+  margin-top: 0;
+  text-align: center;
+  
+}
+#container {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+#clear {
+  clear:both;
+}
+
+#Center {
+display:flex;
+flex:100% ;
+}
+#content {
+  background: #fff000;
+  flex:70%;
+  display: block;
+  
+  
+}
+
+#content div {
+  display: flex;
+
+}
+
+.ContentJpg{
+  flex:30%; 
+  margin: 20px;
+  height: 350px;
+  width: 200px;
+  box-shadow: 7px 9px 16px 0px rgba(0,15,255,1);
+  border-radius: 5px;
+}
+
+.Texts {
+  margin: 10px;
+  flex: 70%;
+  flex-direction: column;
+  background: #f1f1f1;
+  box-shadow: 7px 9px 16px 0px rgba(0,15,255,1);
+  border-radius: 5px;
+  
+}
+
+
+
+#sidebar {
+  background: #414141;
+  flex:30%;
+}
+#clear {
+  clear:both;
+}
+footer {
+  
+  background: #ff0000;
+  display:flex;
+  justify-content: center;
+  
+}
+
+
+/*Прижимаем футер к низу*/
+.footer div{
+
+  margin-top: auto;  
+  justify-content: center;
+  
+ 
+
+}
+.footer div div{
+  
+  display: flex;  
+  margin: 10px;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.footer div div div{
+  flex: 10%;
+
+}
+.footer div div .footer-columns{
+  flex:90%;
+  display: flex;
+
+}
+
+
+
+
+
+.footer-column{
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+
+.carousele{
+  margin: 10px;
+  display: flex;
+}
+.carousele div{
+  flex: 70%;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+}
+.carousele div img{
+ 
+  height: 670px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 7px 9px 16px 0px rgb(24, 24, 24);
+  justify-content: center;
+}
+.carousele1{
+  margin: 10px;
+  display: flex;
+}
+.carousele1 div{
+  flex: 70%;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+}
+.carousele1 div img{
+ 
+  height: 670px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 7px 9px 16px 0px rgb(24, 24, 24);
+  justify-content: center;
+}
+
+
+
